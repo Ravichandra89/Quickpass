@@ -22,7 +22,7 @@ const search_controller = require("./controllers/search");
 const trending_controller = require("./controllers/trending");
 const ratingRouter = require("./routers/rating");
 app.use(cors({
-    origin: 'http://localhost:4200',   //#FIXME: Change this to the frontend URL when deploying
+    origin: 'http://localhost:4200',   
     optionsSuccessStatus: 200, 
     credentials: true
 }));

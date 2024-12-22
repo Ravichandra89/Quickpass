@@ -3,6 +3,7 @@ const User = require("../models/user");
 const router = new express.Router();
 const user_controller = require("../controllers/user");
 const auth_middleware = require("../middlewares/auth");
+
 //Create a User
 router.post("/",user_controller.createUser);
 router.get("/:id",auth_middleware.authenticateToken,user_controller.getUserById);
